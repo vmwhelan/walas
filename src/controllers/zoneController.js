@@ -57,7 +57,7 @@ function getVars(req, body) {
 
 // GET request called from /zones
 // returns json of database values for all zones
-exports.listZoneDatabase = function(req,res) {
+exports.getAllZonesFromDb = function(req,res) {
     Zone.find({}, (err,zone) => {
         if (err) {
             res.send(err);

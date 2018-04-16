@@ -41,7 +41,7 @@ router.post('/zone/:id/update',zoneController.updateZoneDataById);
 
 
 // GET request for list of all Zones in db
-router.get('/zones', zoneController.listZoneDatabase);
+router.get('/zones', zoneController.getAllZonesFromDb);
 
 // PUT request to update all Zones in db
 router.put('/zones', zoneController.updateZoneDatabase);
